@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConfCert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headBox">
+        <h1>ConfCert - Certification Verification</h1>
+    </div>
+    
+
+    <div class="box">
+        <h2>Issue Certification</h2>
+        <input type="text" id="studentName" placeholder="Student Name" />
+        <input type="file" id="certificateFile" accept="application/pdf" />
+        <button onclick="uploadCertificate()">Upload Certificate</button>
+
+        <p id="issueResult"></p>
+        <p id="CertificateId"></p>
+    </div>
+
+    <div class="box">
+        <h2>Verify Certification</h2>
+        <input type="number" id="certId" placeholder="Certificate ID">
+        <button onclick="verifyCertificate()">Verify</button>
+        <p id="verifyResult"></p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
